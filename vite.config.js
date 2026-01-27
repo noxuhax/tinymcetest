@@ -13,4 +13,14 @@ export default defineConfig({
       ),
     },
   },
+  server: {
+    host: "localhost",
+    port: 80,
+    strictPort: true,
+  },
+  preview: {
+    host: "localhost",
+    port: 80,
+    strictPort: true,
+  },
 });
