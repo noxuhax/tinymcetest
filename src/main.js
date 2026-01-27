@@ -8,15 +8,10 @@ import "tinymce/plugins/link";
 import "tinymce/plugins/lists";
 import "tinymce/plugins/table";
 
-import "tinymce-premium/plugins/advcode";
-import "tinymce-premium/plugins/licensekeymanager";
+import advcodeUrl from "tinymce-premium/plugins/advcode/plugin.min.js?url";
+import licenseKeyManagerUrl from "tinymce-premium/plugins/licensekeymanager/plugin.min.js?url";
 
 import "./styles.css";
-
-const premiumPluginBase = new URL(
-  "tinymce-premium/plugins/",
-  import.meta.url,
-).href;
 
 tinymce.init({
   selector: "#editor",
@@ -24,8 +19,8 @@ tinymce.init({
   height: 500,
   menubar: "file edit view insert format tools table help",
   external_plugins: {
-    advcode: `${premiumPluginBase}advcode/plugin.min.js`,
-    licensekeymanager: `${premiumPluginBase}licensekeymanager/plugin.min.js`,
+    advcode: advcodeUrl,
+    licensekeymanager: licenseKeyManagerUrl,
   },
   plugins: ["licensekeymanager", "advcode", "link", "lists", "table"],
   toolbar:
