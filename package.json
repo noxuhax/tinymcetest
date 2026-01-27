@@ -1,0 +1,18 @@
+{
+  "name": "tinymce-advcode-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "tinymce": "^8.3.2",
+    "tinymce-premium": "^8.3.2"
+  },
+  "devDependencies": {
+    "vite": "^5.4.8"
+  }
+}
