@@ -7,6 +7,9 @@ const rootDir = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [mkcert()],
+  optimizeDeps: {
+    exclude: ["tinymce", "tinymce-premium"],
+  },
   server: {
     https: true,
   },
