@@ -11,4 +11,6 @@ npm install
 npm run dev
 ```
 
-Then open the localhost URL shown in the terminal.
+Then open the HTTPS localhost URL shown in the terminal. The dev server uses
+`vite-plugin-mkcert` to generate a local certificate on first run, so your
+browser may prompt you to trust it the first time you visit the site.
