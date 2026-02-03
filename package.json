@@ -9,10 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tinymce/tinymce-react": "^5.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tinymce": "^8.3.2",
     "tinymce-premium": "^8.3.2"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
     "vite": "^5.4.8",
     "vite-plugin-mkcert": "^1.17.5"
   }

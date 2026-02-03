@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 import mkcert from "vite-plugin-mkcert";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -6,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const rootDir = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  plugins: [mkcert()],
+  plugins: [react(), mkcert()],
   optimizeDeps: {
     exclude: ["tinymce", "tinymce-premium"],
   },
