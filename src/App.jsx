@@ -1,14 +1,6 @@
 import { Editor } from "@tinymce/tinymce-react";
 
-import "tinymce/tinymce";
-import "tinymce/icons/default";
-import "tinymce/themes/silver";
-import "tinymce/models/dom";
-
-import "tinymce/plugins/link";
-import "tinymce/plugins/lists";
-import "tinymce/plugins/table";
-
+import tinymceScriptSrc from "tinymce/tinymce.min.js?url";
 import advcodeUrl from "tinymce-premium/plugins/advcode/plugin.min.js?url";
 import licenseKeyManagerUrl from "tinymce-premium/plugins/licensekeymanager/plugin.min.js?url";
 
@@ -38,7 +30,11 @@ export default function App() {
         <p>Demo editor with the Advanced Code plugin enabled.</p>
       </header>
       <main>
-        <Editor initialValue={initialContent} init={editorInit} />
+        <Editor
+          initialValue={initialContent}
+          init={editorInit}
+          tinymceScriptSrc={tinymceScriptSrc}
+        />
       </main>
     </>
   );
